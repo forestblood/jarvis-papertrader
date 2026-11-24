@@ -298,7 +298,7 @@ def book_fills(name, api, st, fee):
         st["seen_orders"].append(o["id"])
         qty = float(o["filled_qty"])
         px = float(o["filled_avg_price"])
-        sym = o["symbol"]
+        sym = pos_symbol(o["symbol"])   # einheitlich ohne Schrägstrich (ETH/USD -> ETHUSD)
         eur = qty * px / fx
         result = ""
         if o["side"] == "buy":
