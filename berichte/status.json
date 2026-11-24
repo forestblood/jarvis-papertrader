@@ -1,11 +1,11 @@
 {
- "stand": "2026-11-24 12:45",
+ "stand": "2026-11-24 13:06",
  "hinweis": "Probehandel bei Alpaca (Paper). Kein echtes Geld. Gebühren wie Trade Republic simuliert (1 € je Order).",
  "strategien": {
   "momentum": {
    "start_eur": 500,
-   "wert_eur": 498.75,
-   "rendite_prozent": -0.25,
+   "wert_eur": 499.01,
+   "rendite_prozent": -0.2,
    "bargeld_eur": 449.97,
    "gebuehren_eur": 1.0,
    "trades_abgeschlossen": 0,
@@ -17,13 +17,22 @@
     {
      "symbol": "ETHUSD",
      "menge": 0.032062697,
+     "seit": "2026-11-24T11:45:50.515410235Z",
      "einstand_usd": 1693.184,
-     "kurs_usd": 1688.7,
-     "wert_eur": 48.78,
-     "ergebnis_prozent": -0.27
+     "kurs_usd": 1697.625,
+     "wert_eur": 49.04,
+     "ergebnis_prozent": 0.26
     }
    ],
-   "gesperrt": null
+   "gesperrt": null,
+   "name": "Momentum / Ausbruch",
+   "regeln": {
+    "einsatz_eur_je_trade": 50,
+    "stop_loss_prozent": 2.0,
+    "take_profit_prozent": 4.0,
+    "max_offene_positionen": 3,
+    "tagesverlust_limit_eur": 25
+   }
   },
   "ruecksetzer": {
    "start_eur": 500,
@@ -37,7 +46,15 @@
    "bester_trade_eur": null,
    "schlechtester_trade_eur": null,
    "positionen": [],
-   "gesperrt": null
+   "gesperrt": null,
+   "name": "Rücksetzer kaufen",
+   "regeln": {
+    "einsatz_eur_je_trade": 50,
+    "stop_loss_prozent": 2.0,
+    "take_profit_prozent": 2.5,
+    "max_offene_positionen": 3,
+    "tagesverlust_limit_eur": 25
+   }
   }
  }
 }
