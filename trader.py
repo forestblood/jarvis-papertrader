@@ -507,7 +507,7 @@ def write_reports(report, ref_utc):
         results = [float(x["ergebnis_eur"]) for x in closed]
         wins = [x for x in results if x > 0]
         today_res = [float(x["ergebnis_eur"]) for x in closed if x["zeit"].startswith(today)]
-        pos = [{"symbol": p["symbol"], "menge": float(p["qty"]),
+        pos = [{"symbol": p["symbol"], "menge": float(p["qty"]), "seit": st["entries"].get(p["symbol"]),
                 "einstand_usd": round(float(p["avg_entry_price"]), 4),
                 "kurs_usd": round(float(p["current_price"]), 4),
                 "wert_eur": round(float(p["market_value"]) / CFG["eur_usd"], 2),
@@ -520,7 +520,8 @@ def write_reports(report, ref_utc):
              "ergebnis_heute_eur": round(sum(today_res), 2),
              "bester_trade_eur": max(results) if results else None,
              "schlechtester_trade_eur": min(results) if results else None,
-             "positionen": pos, "gesperrt": r["blocked"]}
+             "positionen": pos, "gesperrt": r["blocked"], "name": NAMES.get(name, name),
+             "regeln": {k: CFG["strategien"][name][k] for k in ("einsatz_eur_je_trade", "stop_loss_prozent", "take_profit_prozent", "max_offene_positionen", "tagesverlust_limit_eur")}}
         status["strategien"][name] = s
         md += [f"## {NAMES.get(name, name)}", "",
                f"| Startkapital | Wert jetzt | Rendite | Trades | Gewinnquote | Gebühren |",
@@ -539,6 +540,15 @@ def write_reports(report, ref_utc):
         md += [f"| {x['zeit']} | {x['strategie']} | {x['symbol']} | {x['seite']} | {x['betrag_eur']} € | "
                f"{(x['ergebnis_eur'] + ' €') if x['ergebnis_eur'] else ''} | {x['grund']} |" for x in last]
     (OUT / "status.json").write_text(json.dumps(status, indent=1, ensure_ascii=False))
+    # Wertverlauf für das Diagramm: eine Zeile je Strategie und Durchlauf
+    vp = OUT / "verlauf.csv"
+    new = not vp.exists()
+    with vp.open("a", newline="") as f:
+        w = csv.writer(f)
+        if new:
+            w.writerow(["zeit", "strategie", "wert_eur", "bargeld_eur", "positionen"])
+        for name, s in status["strategien"].items():
+            w.writerow([ref_utc.strftime("%Y-%m-%dT%H:%M:%SZ"), name, s["wert_eur"], s["bargeld_eur"], len(s["positionen"])])
     (OUT / "probehandel.md").write_text("---\ntype: topic\ntags: [finanzen, trading]\n---\n\n" + "\n".join(md) + "\n")
 
 

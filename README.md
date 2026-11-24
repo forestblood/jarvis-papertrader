@@ -6,9 +6,13 @@ GitHub Actions startet den Agenten alle 5 Minuten (`.github/workflows/trader.yml
 
 ## Ergebnisse
 
+**Live-Übersicht:** https://forestblood.github.io/jarvis-papertrader/ (Kennzahlen, Wertverlauf, offene Positionen, alle Käufe und Verkäufe; Quellcode im Branch `gh-pages`)
+
+
 - [`berichte/probehandel.md`](berichte/probehandel.md): Stand beider Strategien, offene Positionen, letzte Ausführungen
 - [`berichte/journal.csv`](berichte/journal.csv): jede Ausführung mit Grund und Ergebnis
 - [`berichte/status.json`](berichte/status.json): Kennzahlen
+- [`berichte/verlauf.csv`](berichte/verlauf.csv): Depotwert je Strategie nach jedem Durchlauf
 - [`state/log.txt`](state/log.txt): Protokoll jedes Durchlaufs
 
 ## Strategien
