@@ -1,0 +1,43 @@
+{
+  "_hinweis": "Probehandel (Paper Trading) bei Alpaca. Kein echtes Geld. Werte in EUR werden mit eur_usd umgerechnet.",
+  "eur_usd": 1.11,
+  "timeframe": "5Min",
+  "lookback_bars": 120,
+  "simulierte_gebuehr_eur_je_order": 1.0,
+  "aktien": ["TSLA", "NVDA", "AMD", "PLTR", "COIN", "MSTR", "SMCI", "MARA", "HOOD", "SOFI"],
+  "krypto": ["BTC/USD", "ETH/USD", "SOL/USD", "DOGE/USD", "AVAX/USD", "LINK/USD"],
+  "strategien": {
+    "momentum": {
+      "aktiv": true,
+      "konto": "MOMENTUM",
+      "budget_eur": 500,
+      "einsatz_eur_je_trade": 50,
+      "max_offene_positionen": 3,
+      "tagesverlust_limit_eur": 25,
+      "stop_loss_prozent": 2.0,
+      "take_profit_prozent": 4.0,
+      "volumen_faktor": 1.5,
+      "opening_range_bars": 3,
+      "krypto_ausbruch_bars": 12,
+      "krypto_max_haltedauer_stunden": 8
+    },
+    "ruecksetzer": {
+      "aktiv": true,
+      "konto": "RUECKSETZER",
+      "budget_eur": 500,
+      "einsatz_eur_je_trade": 50,
+      "max_offene_positionen": 3,
+      "tagesverlust_limit_eur": 25,
+      "stop_loss_prozent": 2.0,
+      "take_profit_prozent": 2.5,
+      "rsi_kaufen_unter": 30,
+      "rsi_verkaufen_ueber": 55,
+      "trend_ema": 100,
+      "max_abstand_unter_trend_prozent": 3.0,
+      "krypto_max_haltedauer_stunden": 8
+    }
+  },
+  "aktien_keine_neuen_einstiege_minuten_vor_schluss": 60,
+  "aktien_alles_schliessen_minuten_vor_schluss": 10,
+  "sperre_nach_verkauf_minuten": 60
+}
