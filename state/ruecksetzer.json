@@ -4,8 +4,12 @@
  "gebuehren_eur": 0.0,
  "last_fill": "2026-11-24T11:44:50.949712+00:00",
  "seen_orders": [],
- "entries": {},
- "reasons": {},
+ "entries": {
+  "SOFI": "2026-11-24T15:56:16.595898+00:00"
+ },
+ "reasons": {
+  "c66dc965-f411-4825-8575-8ce377c45ebb": "RSI 29 (\u00fcberverkauft), Kurs nahe Trend-EMA100"
+ },
  "day": "2026-11-24",
  "day_start_equity": 500.0,
  "lots": {}
