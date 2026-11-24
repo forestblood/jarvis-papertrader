@@ -21,3 +21,6 @@
 2026-11-24 19:32:52 [ruecksetzer] Durchlauf fertig: Wert 498.67 € (Start 500 €), 0 offene Position(en), 0 Aktion(en)
 2026-11-24 20:33:54 [momentum] Durchlauf fertig: Wert 498.41 € (Start 500 €), 1 offene Position(en), 0 Aktion(en)
 2026-11-24 20:33:54 [ruecksetzer] Durchlauf fertig: Wert 498.67 € (Start 500 €), 0 offene Position(en), 0 Aktion(en)
+2026-11-24 21:25:17 [momentum] Verkauf ETH/USD: Haltedauer 9 h erreicht (-1.1 %)
+2026-11-24 21:25:17 [momentum] Durchlauf fertig: Wert 498.32 € (Start 500 €), 1 offene Position(en), 1 Aktion(en)
+2026-11-24 21:25:18 [ruecksetzer] Durchlauf fertig: Wert 498.67 € (Start 500 €), 0 offene Position(en), 0 Aktion(en)
