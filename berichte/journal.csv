@@ -1,3 +1,4 @@
 zeit,strategie,symbol,seite,menge,preis_usd,betrag_eur,gebuehr_eur,ergebnis_eur,grund
 2026-11-24 12:45,momentum,ETH/USD,Kauf,0.0321431,1693.1840,49.03,1.00,,"Ausbruch über 60-Min-Hoch 1689.36, Volumen 24.9x"
 2026-11-24 16:56,ruecksetzer,SOFI,Kauf,4.36242,12.7200,49.99,1.00,,"RSI 29 (überverkauft), Kurs nahe Trend-EMA100"
+2026-11-24 18:41,ruecksetzer,SOFI,Verkauf,4.36242,12.8900,50.66,1.00,-1.33,RSI 56 erholt (+1.4 %)

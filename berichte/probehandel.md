@@ -3,7 +3,7 @@ type: topic
 tags: [finanzen, trading]
 ---
 
-# Probehandel – Stand 2026-11-24 18:41
+# Probehandel – Stand 2026-11-24 19:32
 
 Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jede Order kostet hier wie bei Trade Republic 1 €.
 
@@ -11,29 +11,24 @@ Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jed
 
 | Startkapital | Wert jetzt | Rendite | Trades | Gewinnquote | Gebühren |
 |---|---|---|---|---|---|
-| 500 € | 498.65 € | -0.27 % | 0 | – | 1.00 € |
+| 500 € | 498.59 € | -0.28 % | 0 | – | 1.00 € |
 
 Offene Positionen:
 
 | Symbol | Wert | Ergebnis |
 |---|---|---|
-| ETHUSD | 48.68 € | -0.47 % |
+| ETHUSD | 48.62 € | -0.59 % |
 
 ## Rücksetzer kaufen
 
 | Startkapital | Wert jetzt | Rendite | Trades | Gewinnquote | Gebühren |
 |---|---|---|---|---|---|
-| 500 € | 499.69 € | -0.06 % | 0 | – | 1.00 € |
-
-Offene Positionen:
-
-| Symbol | Wert | Ergebnis |
-|---|---|---|
-| SOFI | 50.68 € | +1.38 % |
+| 500 € | 498.67 € | -0.27 % | 1 | 0.0 % | 2.00 € |
 
 ## Letzte Ausführungen
 
 | Zeit | Strategie | Symbol | Seite | Betrag | Ergebnis | Grund |
 |---|---|---|---|---|---|---|
+| 2026-11-24 18:41 | ruecksetzer | SOFI | Verkauf | 50.66 € | -1.33 € | RSI 56 erholt (+1.4 %) |
 | 2026-11-24 16:56 | ruecksetzer | SOFI | Kauf | 49.99 € |  | RSI 29 (überverkauft), Kurs nahe Trend-EMA100 |
 | 2026-11-24 12:45 | momentum | ETH/USD | Kauf | 49.03 € |  | Ausbruch über 60-Min-Hoch 1689.36, Volumen 24.9x |

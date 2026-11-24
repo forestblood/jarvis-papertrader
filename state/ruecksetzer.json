@@ -1,25 +1,17 @@
 {
  "start_eur": 500,
- "cash_eur": 449.00900901643246,
- "gebuehren_eur": 1.0,
- "last_fill": "2026-11-24T15:56:22.546815Z",
+ "cash_eur": 498.66811859018924,
+ "gebuehren_eur": 2.0,
+ "last_fill": "2026-11-24T17:41:36.591842Z",
  "seen_orders": [
-  "c66dc965-f411-4825-8575-8ce377c45ebb"
+  "c66dc965-f411-4825-8575-8ce377c45ebb",
+  "e111ea38-3707-40ef-95dc-fd956b1e65c5"
  ],
- "entries": {
-  "SOFI": "2026-11-24T15:56:16.595898+00:00"
- },
- "reasons": {
-  "e111ea38-3707-40ef-95dc-fd956b1e65c5": "RSI 56 erholt (+1.4 %)"
- },
+ "entries": {},
+ "reasons": {},
  "day": "2026-11-24",
  "day_start_equity": 500.0,
- "lots": {
-  "SOFI": {
-   "qty": 4.362421383,
-   "cost_eur": 50.99099098356756
-  }
- },
+ "lots": {},
  "cooldown": {
   "SOFI": "2026-11-24T17:41:31.160028+00:00"
  }
