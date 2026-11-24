@@ -14,3 +14,6 @@
 2026-11-24 16:56:20 [ruecksetzer] Durchlauf fertig: Wert 500.00 € (Start 500 €), 0 offene Position(en), 1 Aktion(en)
 2026-11-24 17:55:11 [momentum] Durchlauf fertig: Wert 498.22 € (Start 500 €), 1 offene Position(en), 0 Aktion(en)
 2026-11-24 17:55:11 [ruecksetzer] Durchlauf fertig: Wert 499.37 € (Start 500 €), 1 offene Position(en), 0 Aktion(en)
+2026-11-24 18:41:33 [momentum] Durchlauf fertig: Wert 498.65 € (Start 500 €), 1 offene Position(en), 0 Aktion(en)
+2026-11-24 18:41:34 [ruecksetzer] Verkauf SOFI: RSI 56 erholt (+1.4 %)
+2026-11-24 18:41:34 [ruecksetzer] Durchlauf fertig: Wert 499.69 € (Start 500 €), 1 offene Position(en), 1 Aktion(en)
