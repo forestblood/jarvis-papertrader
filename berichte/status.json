@@ -1,11 +1,11 @@
 {
- "stand": "2026-11-24 16:56",
+ "stand": "2026-11-24 17:55",
  "hinweis": "Probehandel bei Alpaca (Paper). Kein echtes Geld. Gebühren wie Trade Republic simuliert (1 € je Order).",
  "strategien": {
   "momentum": {
    "start_eur": 500,
-   "wert_eur": 498.45,
-   "rendite_prozent": -0.31,
+   "wert_eur": 498.22,
+   "rendite_prozent": -0.36,
    "bargeld_eur": 449.97,
    "gebuehren_eur": 1.0,
    "trades_abgeschlossen": 0,
@@ -19,9 +19,9 @@
      "menge": 0.032062697,
      "seit": "2026-11-24T11:45:50.515410235Z",
      "einstand_usd": 1693.184,
-     "kurs_usd": 1678.217,
-     "wert_eur": 48.48,
-     "ergebnis_prozent": -0.88
+     "kurs_usd": 1670.32,
+     "wert_eur": 48.25,
+     "ergebnis_prozent": -1.35
     }
    ],
    "gesperrt": null,
@@ -36,16 +36,26 @@
   },
   "ruecksetzer": {
    "start_eur": 500,
-   "wert_eur": 500.0,
-   "rendite_prozent": 0.0,
-   "bargeld_eur": 500,
-   "gebuehren_eur": 0.0,
+   "wert_eur": 499.37,
+   "rendite_prozent": -0.13,
+   "bargeld_eur": 449.01,
+   "gebuehren_eur": 1.0,
    "trades_abgeschlossen": 0,
    "gewinnquote_prozent": null,
    "ergebnis_heute_eur": 0,
    "bester_trade_eur": null,
    "schlechtester_trade_eur": null,
-   "positionen": [],
+   "positionen": [
+    {
+     "symbol": "SOFI",
+     "menge": 4.362421383,
+     "seit": "2026-11-24T15:56:16.595898+00:00",
+     "einstand_usd": 12.72,
+     "kurs_usd": 12.815,
+     "wert_eur": 50.36,
+     "ergebnis_prozent": 0.75
+    }
+   ],
    "gesperrt": null,
    "name": "Rücksetzer kaufen",
    "regeln": {

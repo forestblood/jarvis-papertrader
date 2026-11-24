@@ -12,3 +12,5 @@
 2026-11-24 16:56:19 [momentum] Durchlauf fertig: Wert 498.45 € (Start 500 €), 1 offene Position(en), 0 Aktion(en)
 2026-11-24 16:56:20 [ruecksetzer] Kauf SOFI: RSI 29 (überverkauft), Kurs nahe Trend-EMA100
 2026-11-24 16:56:20 [ruecksetzer] Durchlauf fertig: Wert 500.00 € (Start 500 €), 0 offene Position(en), 1 Aktion(en)
+2026-11-24 17:55:11 [momentum] Durchlauf fertig: Wert 498.22 € (Start 500 €), 1 offene Position(en), 0 Aktion(en)
+2026-11-24 17:55:11 [ruecksetzer] Durchlauf fertig: Wert 499.37 € (Start 500 €), 1 offene Position(en), 0 Aktion(en)
