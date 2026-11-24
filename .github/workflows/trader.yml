@@ -1,0 +1,45 @@
+name: Papertrader
+
+# Alle 5 Minuten ein Durchlauf (GitHub startet geplante Läufe manchmal einige Minuten später).
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+
+# Nie zwei Durchläufe gleichzeitig
+concurrency:
+  group: papertrader
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  durchlauf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Durchlauf (nur Paper Trading)
+        env:
+          ALPACA_MOMENTUM_KEY: ${{ secrets.ALPACA_MOMENTUM_KEY }}
+          ALPACA_MOMENTUM_SECRET: ${{ secrets.ALPACA_MOMENTUM_SECRET }}
+          ALPACA_RUECKSETZER_KEY: ${{ secrets.ALPACA_RUECKSETZER_KEY }}
+          ALPACA_RUECKSETZER_SECRET: ${{ secrets.ALPACA_RUECKSETZER_SECRET }}
+        run: python3 trader.py
+
+      - name: Zustand und Berichte sichern
+        if: always()
+        run: |
+          git config user.name "papertrader-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state berichte
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "Durchlauf $(date -u +'%Y-%m-%d %H:%M') UTC"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && exit 0; sleep 5; done
+          exit 1
