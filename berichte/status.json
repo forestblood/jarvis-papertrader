@@ -1,0 +1,43 @@
+{
+ "stand": "2026-11-24 12:45",
+ "hinweis": "Probehandel bei Alpaca (Paper). Kein echtes Geld. Gebühren wie Trade Republic simuliert (1 € je Order).",
+ "strategien": {
+  "momentum": {
+   "start_eur": 500,
+   "wert_eur": 498.75,
+   "rendite_prozent": -0.25,
+   "bargeld_eur": 449.97,
+   "gebuehren_eur": 1.0,
+   "trades_abgeschlossen": 0,
+   "gewinnquote_prozent": null,
+   "ergebnis_heute_eur": 0,
+   "bester_trade_eur": null,
+   "schlechtester_trade_eur": null,
+   "positionen": [
+    {
+     "symbol": "ETHUSD",
+     "menge": 0.032062697,
+     "einstand_usd": 1693.184,
+     "kurs_usd": 1688.7,
+     "wert_eur": 48.78,
+     "ergebnis_prozent": -0.27
+    }
+   ],
+   "gesperrt": null
+  },
+  "ruecksetzer": {
+   "start_eur": 500,
+   "wert_eur": 500.0,
+   "rendite_prozent": 0.0,
+   "bargeld_eur": 500,
+   "gebuehren_eur": 0.0,
+   "trades_abgeschlossen": 0,
+   "gewinnquote_prozent": null,
+   "ergebnis_heute_eur": 0,
+   "bester_trade_eur": null,
+   "schlechtester_trade_eur": null,
+   "positionen": [],
+   "gesperrt": null
+  }
+ }
+}

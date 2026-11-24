@@ -1,0 +1,3 @@
+2026-11-24 12:45:50 [momentum] Kauf ETH/USD: Ausbruch über 60-Min-Hoch 1689.36, Volumen 24.9x
+2026-11-24 12:45:50 [momentum] Durchlauf fertig: Wert 500.00 € (Start 500 €), 0 offene Position(en), 1 Aktion(en), US-Börse zu – nur Krypto
+2026-11-24 12:45:51 [ruecksetzer] Durchlauf fertig: Wert 500.00 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto

@@ -1,0 +1,22 @@
+{
+ "start_eur": 500,
+ "cash_eur": 449.9692734800721,
+ "gebuehren_eur": 1.0,
+ "last_fill": "2026-11-24T11:45:50.515410235Z",
+ "seen_orders": [
+  "e8ae0e47-ea92-421a-bd11-d372ba91e0da"
+ ],
+ "entries": {
+  "ETHUSD": "2026-11-24T11:45:47.079329+00:00",
+  "ETH/USD": "2026-11-24T11:45:50.515410235Z"
+ },
+ "reasons": {},
+ "day": "2026-11-24",
+ "day_start_equity": 500.0,
+ "lots": {
+  "ETH/USD": {
+   "qty": 0.032143055,
+   "cost_eur": 50.03072651992792
+  }
+ }
+}
