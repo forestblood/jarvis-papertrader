@@ -5,3 +5,5 @@
 2026-11-24 13:06:36 [ruecksetzer] Durchlauf fertig: Wert 500.00 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-24 13:47:38 [momentum] Durchlauf fertig: Wert 498.95 € (Start 500 €), 1 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-24 13:47:39 [ruecksetzer] Durchlauf fertig: Wert 500.00 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-24 15:02:33 [momentum] Durchlauf fertig: Wert 499.01 € (Start 500 €), 1 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-24 15:02:34 [ruecksetzer] Durchlauf fertig: Wert 500.00 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
