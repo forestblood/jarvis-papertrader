@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Probehandel – Jarvis</title>
+<style>
+.viz-root {
+  color-scheme: light;
+  --surface-0: #f4f3f0;
+  --surface-1: #fcfcfb;
+  --border: #e2e0da;
+  --grid: #ebe9e4;
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted: #7a7974;
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --good: #0f7b3a;
+  --bad: #c42b2b;
+}
+@media (prefers-color-scheme: dark) {
+  .viz-root {
+    color-scheme: dark;
+    --surface-0: #121211;
+    --surface-1: #1a1a19;
+    --border: #2e2d2b;
+    --grid: #262624;
+    --text-primary: #f0efec;
+    --text-secondary: #c3c2b7;
+    --text-muted: #8f8e86;
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --good: #3fb56b;
+    --bad: #e66767;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.viz-root { background: var(--surface-0); color: var(--text-primary); min-height: 100vh;
+  font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif; padding: 20px; }
+.wrap { max-width: 1120px; margin: 0 auto; display: grid; gap: 16px; }
+header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px; }
+h1 { font-size: 22px; margin: 0; font-weight: 650; letter-spacing: -0.01em; }
+h2 { font-size: 15px; margin: 0 0 12px; font-weight: 600; }
+.sub { color: var(--text-secondary); font-size: 13px; }
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--good); margin-right: 6px; vertical-align: 1px; }
+.dot.stale { background: var(--text-muted); }
+.card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 16px; }
+.wrap > *, .kpis > * { min-width: 0; }
+@media (max-width: 520px) { .viz-root { padding: 12px; } .kpi-grid { grid-template-columns: repeat(2, 1fr); } svg { height: 260px; } }
+.kpi-head { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; font-weight: 600; }
+.swatch { width: 12px; height: 3px; border-radius: 2px; }
+.kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px 12px; }
+.kpi-label { color: var(--text-muted); font-size: 12px; }
+.kpi-value { font-size: 18px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.kpi-value.big { font-size: 26px; }
+.pos { color: var(--good); } .neg { color: var(--bad); }
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.seg button { background: none; border: 0; padding: 5px 11px; font: inherit; font-size: 13px; color: var(--text-secondary); cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--border); }
+.seg button[aria-pressed="true"] { background: var(--grid); color: var(--text-primary); font-weight: 600; }
+.legend { display: flex; gap: 14px; font-size: 13px; color: var(--text-secondary); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.chart { position: relative; }
+svg { display: block; width: 100%; height: 320px; overflow: visible; }
+.axis text { fill: var(--text-muted); font-size: 11px; }
+.gridline { stroke: var(--grid); stroke-width: 1; }
+.baseline { stroke: var(--text-muted); stroke-width: 1; stroke-dasharray: 4 4; }
+.tip { position: absolute; pointer-events: none; background: var(--surface-1); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 10px; font-size: 12px; box-shadow: 0 4px 16px rgba(0,0,0,.12); display: none; white-space: nowrap; }
+.empty { color: var(--text-muted); padding: 40px 0; text-align: center; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+th { text-align: left; font-weight: 600; color: var(--text-secondary); font-size: 12px; padding: 6px 8px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+td { padding: 7px 8px; border-bottom: 1px solid var(--grid); vertical-align: top; }
+td.num, th.num { text-align: right; white-space: nowrap; }
+.scroll { overflow-x: auto; }
+.tag { display: inline-block; white-space: nowrap; padding: 1px 7px; border-radius: 99px; font-size: 11px; font-weight: 600; border: 1px solid var(--border); }
+.why { color: var(--text-secondary); min-width: 220px; }
+footer { color: var(--text-muted); font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="viz-root">
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Probehandel</h1>
+      <div class="sub">Simulation mit virtuellem Geld bei Alpaca · 1 € Gebühr je Order wie bei Trade Republic · kein echtes Geld</div>
+    </div>
+    <div class="sub"><span class="dot" id="dot"></span><span id="stand">lädt …</span></div>
+  </header>
+
+  <section class="kpis" id="kpis"></section>
+
+  <section class="card">
+    <div class="toolbar">
+      <h2 style="margin:0">Wertentwicklung</h2>
+      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+        <div class="legend" id="legend"></div>
+        <div class="seg" id="range">
+          <button data-r="1d" aria-pressed="true">Heute</button>
+          <button data-r="7d" aria-pressed="false">7 Tage</button>
+          <button data-r="all" aria-pressed="false">Alles</button>
+        </div>
+      </div>
+    </div>
+    <div class="chart" id="chart"><svg id="svg" role="img" aria-label="Wertentwicklung beider Strategien in Euro"></svg><div class="tip" id="tip"></div></div>
+  </section>
+
+  <section class="card">
+    <h2>Offene Positionen</h2>
+    <div class="scroll" id="positions"></div>
+  </section>
+
+  <section class="card">
+    <div class="toolbar">
+      <h2 style="margin:0">Käufe und Verkäufe</h2>
+      <div class="seg" id="filter">
+        <button data-f="alle" aria-pressed="true">Alle</button>
+        <button data-f="momentum" aria-pressed="false">Momentum</button>
+        <button data-f="ruecksetzer" aria-pressed="false">Rücksetzer</button>
+      </div>
+    </div>
+    <div class="scroll" id="trades"></div>
+  </section>
+
+  <footer>Aktualisiert sich jede Minute. Der Agent läuft alle 5 Minuten über GitHub Actions; neue Daten erscheinen mit einigen Minuten Verzögerung. Keine Anlageberatung.</footer>
+</div>
+</div>
+
+<script>
+const RAW = "https://raw.githubusercontent.com/forestblood/jarvis-papertrader/main/";
+const NAMES = { momentum: "Momentum / Ausbruch", ruecksetzer: "Rücksetzer kaufen" };
+const SHORT = { momentum: "Momentum", ruecksetzer: "Rücksetzer" };
+const sym = s => /^[A-Z]{2,6}USD$/.test(s) && !s.includes("/") ? s.slice(0, -3) + "/USD" : s;
+const SERIES = { momentum: "--series-1", ruecksetzer: "--series-2" };
+const START = 500;
+let state = { status: null, verlauf: [], journal: [], range: "1d", filter: "alle" };
+
+const css = v => getComputedStyle(document.querySelector(".viz-root")).getPropertyValue(v).trim();
+const eur = (v, sign) => (v == null || isNaN(v)) ? "–" :
+  (sign && v > 0 ? "+" : "") + v.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
+const pct = v => (v == null || isNaN(v)) ? "–" : (v > 0 ? "+" : "") + v.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " %";
+const cls = v => v > 0 ? "pos" : v < 0 ? "neg" : "";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function parseCSV(text) {
+  const rows = []; let row = [], f = "", q = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (q) { if (c === '"') { if (text[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += c; }
+    else if (c === '"') q = true;
+    else if (c === ",") { row.push(f); f = ""; }
+    else if (c === "\n") { row.push(f); rows.push(row); row = []; f = ""; }
+    else if (c !== "\r") f += c;
+  }
+  if (f || row.length) { row.push(f); rows.push(row); }
+  const head = rows.shift() || [];
+  return rows.filter(r => r.length === head.length).map(r => Object.fromEntries(head.map((h, i) => [h, r[i]])));
+}
+
+async function get(path, asText) {
+  const r = await fetch(RAW + path + "?t=" + Date.now(), { cache: "no-store" });
+  if (!r.ok) throw new Error(path + ": " + r.status);
+  return asText ? r.text() : r.json();
+}
+
+async function load() {
+  try {
+    const [status, verlauf, journal] = await Promise.all([
+      get("berichte/status.json"),
+      get("berichte/verlauf.csv", true).catch(() => ""),
+      get("berichte/journal.csv", true).catch(() => "")]);
+    state.status = status;
+    state.verlauf = parseCSV(verlauf).map(r => ({ t: new Date(r.zeit), s: r.strategie, v: +r.wert_eur }));
+    state.journal = parseCSV(journal).reverse();
+    render();
+  } catch (e) {
+    document.getElementById("stand").textContent = "Daten nicht erreichbar (" + e.message + ")";
+    document.getElementById("dot").className = "dot stale";
+  }
+}
+
+function render() {
+  const st = state.status;
+  const standDate = st.stand ? new Date(st.stand.replace(" ", "T")) : null;
+  const ageMin = standDate ? (Date.now() - standDate) / 60000 : 999;
+  document.getElementById("stand").textContent = "Stand " + st.stand + " Uhr" + (ageMin > 20 ? " · länger kein Durchlauf" : "");
+  document.getElementById("dot").className = "dot" + (ageMin > 20 ? " stale" : "");
+  renderKpis(st); renderLegend(st); renderChart(); renderPositions(st); renderTrades();
+}
+
+function renderKpis(st) {
+  document.getElementById("kpis").innerHTML = Object.entries(st.strategien).map(([k, s]) => `
+    <div class="card">
+      <div class="kpi-head"><span class="swatch" style="background:var(${SERIES[k]})"></span>${esc(s.name || NAMES[k] || k)}</div>
+      <div class="kpi-grid">
+        <div style="grid-column: span 2"><div class="kpi-label">Wert jetzt (Start ${eur(s.start_eur)})</div>
+          <div class="kpi-value big">${eur(s.wert_eur)}</div></div>
+        <div><div class="kpi-label">Rendite</div><div class="kpi-value ${cls(s.rendite_prozent)}">${pct(s.rendite_prozent)}</div></div>
+        <div><div class="kpi-label">Ergebnis heute</div><div class="kpi-value ${cls(s.ergebnis_heute_eur)}">${eur(s.ergebnis_heute_eur, true)}</div></div>
+        <div><div class="kpi-label">Abgeschlossene Trades</div><div class="kpi-value">${s.trades_abgeschlossen}</div></div>
+        <div><div class="kpi-label">Gewinnquote</div><div class="kpi-value">${s.gewinnquote_prozent == null ? "–" : s.gewinnquote_prozent.toLocaleString("de-DE") + " %"}</div></div>
+        <div><div class="kpi-label">Gebühren bisher</div><div class="kpi-value">${eur(s.gebuehren_eur)}</div></div>
+        <div><div class="kpi-label">Bester / schlechtester</div><div class="kpi-value" style="font-size:14px">${eur(s.bester_trade_eur, true)} / ${eur(s.schlechtester_trade_eur, true)}</div></div>
+        <div><div class="kpi-label">Offen</div><div class="kpi-value">${s.positionen.length}${s.regeln ? " / " + s.regeln.max_offene_positionen : ""}</div></div>
+      </div>
+      ${s.gesperrt ? `<div class="sub" style="margin-top:10px">⏸ Keine neuen Käufe: ${esc(s.gesperrt)}</div>` : ""}
+    </div>`).join("");
+}
+
+function renderLegend(st) {
+  document.getElementById("legend").innerHTML = Object.keys(st.strategien).map(k =>
+    `<span><span class="swatch" style="background:var(${SERIES[k]})"></span>${esc(NAMES[k] || k)}</span>`).join("") +
+    `<span><span class="swatch" style="background:none;border-top:1px dashed var(--text-muted)"></span>Start 500 €</span>`;
+}
+
+function renderChart() {
+  const svg = document.getElementById("svg"), tip = document.getElementById("tip");
+  const W = svg.clientWidth || 800, H = svg.clientHeight || 320, m = { l: 56, r: 96, t: 12, b: 28 };
+  const now = Date.now();
+  const from = state.range === "1d" ? new Date(new Date().setHours(0, 0, 0, 0)).getTime()
+             : state.range === "7d" ? now - 7 * 864e5 : -Infinity;
+  const pts = state.verlauf.filter(p => p.t.getTime() >= from && !isNaN(p.v));
+  const by = {};
+  pts.forEach(p => (by[p.s] = by[p.s] || []).push(p));
+  const keys = Object.keys(by);
+  if (!pts.length) { svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+    svg.innerHTML = `<text x="${W/2}" y="${H/2}" text-anchor="middle" fill="${css('--text-muted')}" font-size="13">Noch keine Daten für diesen Zeitraum</text>`; return; }
+  const t0 = Math.min(...pts.map(p => +p.t)), t1 = Math.max(...pts.map(p => +p.t), t0 + 60000);
+  let lo = Math.min(START, ...pts.map(p => p.v)), hi = Math.max(START, ...pts.map(p => p.v));
+  const pad = Math.max((hi - lo) * 0.15, 2); lo -= pad; hi += pad;
+  const x = t => m.l + (t - t0) / (t1 - t0) * (W - m.l - m.r);
+  const y = v => m.t + (hi - v) / (hi - lo) * (H - m.t - m.b);
+  const ticks = niceTicks(lo, hi, 5);
+  const span = t1 - t0;
+  const fmtT = t => { const d = new Date(t); return span > 36 * 36e5
+    ? d.toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit" }) + " " + d.toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" })
+    : d.toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" }); };
+  const fr = W < 560 ? [0, 0.5, 1] : [0, 0.25, 0.5, 0.75, 1];
+  const xt = fr.map(f => t0 + f * span);
+  let h = `<g class="axis">`;
+  ticks.forEach(v => h += `<line class="gridline" x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/><text x="${m.l - 8}" y="${y(v) + 4}" text-anchor="end">${v.toLocaleString("de-DE")} €</text>`);
+  xt.forEach((t, i) => h += `<text x="${x(t)}" y="${H - 6}" text-anchor="${i === 0 ? "start" : i === xt.length - 1 ? "end" : "middle"}">${fmtT(t)}</text>`);
+  h += `</g><line class="baseline" x1="${m.l}" x2="${W - m.r}" y1="${y(START)}" y2="${y(START)}"/>`;
+  keys.forEach(k => {
+    const s = by[k], col = css(SERIES[k] || "--text-secondary");
+    const d = s.map((p, i) => (i ? "L" : "M") + x(+p.t).toFixed(1) + "," + y(p.v).toFixed(1)).join("");
+    h += `<path d="${d}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
+    const last = s[s.length - 1];
+    h += `<circle cx="${x(+last.t)}" cy="${y(last.v)}" r="4" fill="${col}" stroke="${css('--surface-1')}" stroke-width="2"/>`;
+    h += `<text x="${x(+last.t) + 10}" y="${y(last.v) + 4}" font-size="12" fill="${css('--text-primary')}" font-weight="600">${eur(last.v)}</text>`;
+  });
+  h += `<line id="cross" x1="0" x2="0" y1="${m.t}" y2="${H - m.b}" stroke="${css('--text-muted')}" stroke-width="1" style="display:none"/>`;
+  h += `<rect x="${m.l}" y="${m.t}" width="${W - m.l - m.r}" height="${H - m.t - m.b}" fill="transparent" id="hit"/>`;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.innerHTML = h;
+  const hit = svg.querySelector("#hit"), cross = svg.querySelector("#cross");
+  hit.addEventListener("mousemove", e => {
+    const r = svg.getBoundingClientRect(), mx = (e.clientX - r.left) * (W / r.width);
+    const t = t0 + (mx - m.l) / (W - m.l - m.r) * span;
+    const rows = keys.map(k => { const s = by[k]; let best = s[0];
+      s.forEach(p => { if (Math.abs(p.t - t) < Math.abs(best.t - t)) best = p; }); return [k, best]; });
+    const tt = rows[0][1].t;
+    cross.setAttribute("x1", x(+tt)); cross.setAttribute("x2", x(+tt)); cross.style.display = "";
+    tip.innerHTML = `<div style="color:var(--text-muted);margin-bottom:4px">${tt.toLocaleString("de-DE", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })}</div>` +
+      rows.map(([k, p]) => `<div><span class="swatch" style="display:inline-block;background:var(${SERIES[k]});margin-right:6px;vertical-align:3px"></span>${esc(NAMES[k] || k)}: <b>${eur(p.v)}</b> <span class="${cls(p.v - START)}">(${eur(p.v - START, true)})</span></div>`).join("");
+    tip.style.display = "block";
+    const left = (x(+tt) / W) * r.width;
+    tip.style.left = Math.min(left + 12, r.width - tip.offsetWidth - 4) + "px";
+    tip.style.top = "8px";
+  });
+  hit.addEventListener("mouseleave", () => { tip.style.display = "none"; cross.style.display = "none"; });
+}
+
+function niceTicks(lo, hi, n) {
+  const step0 = (hi - lo) / n, mag = Math.pow(10, Math.floor(Math.log10(step0)));
+  const step = [1, 2, 2.5, 5, 10].map(s => s * mag).find(s => s >= step0);
+  const out = []; for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-9; v += step) out.push(+v.toFixed(6));
+  return out;
+}
+
+function renderPositions(st) {
+  const rows = [];
+  Object.entries(st.strategien).forEach(([k, s]) => s.positionen.forEach(p => rows.push([k, p])));
+  if (!rows.length) { document.getElementById("positions").innerHTML = `<div class="empty">Gerade keine offenen Positionen</div>`; return; }
+  document.getElementById("positions").innerHTML = `<table><thead><tr>
+    <th>Strategie</th><th>Symbol</th><th class="num">Menge</th><th class="num">Einstand</th><th class="num">Kurs jetzt</th><th class="num">Wert</th><th class="num">Ergebnis</th><th>Gekauft</th></tr></thead><tbody>` +
+    rows.map(([k, p]) => `<tr><td><span class="tag" style="border-color:var(${SERIES[k]})">${esc(SHORT[k] || k)}</span></td>
+      <td><b>${esc(sym(p.symbol))}</b></td><td class="num">${(+p.menge).toLocaleString("de-DE", { maximumFractionDigits: 6 })}</td>
+      <td class="num">${(+p.einstand_usd).toLocaleString("de-DE", { maximumFractionDigits: 4 })} $</td>
+      <td class="num">${(+p.kurs_usd).toLocaleString("de-DE", { maximumFractionDigits: 4 })} $</td>
+      <td class="num">${eur(p.wert_eur)}</td><td class="num ${cls(p.ergebnis_prozent)}">${pct(p.ergebnis_prozent)}</td>
+      <td>${p.seit ? new Date(p.seit).toLocaleString("de-DE", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }) : "–"}</td></tr>`).join("") + `</tbody></table>`;
+}
+
+function renderTrades() {
+  const rows = state.journal.filter(r => state.filter === "alle" || r.strategie === state.filter).slice(0, 60);
+  if (!rows.length) { document.getElementById("trades").innerHTML = `<div class="empty">Noch keine Ausführungen</div>`; return; }
+  document.getElementById("trades").innerHTML = `<table><thead><tr>
+    <th>Zeit</th><th>Strategie</th><th>Symbol</th><th>Art</th><th class="num">Menge</th><th class="num">Preis</th><th class="num">Betrag</th><th class="num">Gebühr</th><th class="num">Ergebnis</th><th>Grund</th></tr></thead><tbody>` +
+    rows.map(r => { const res = r.ergebnis_eur === "" ? null : +r.ergebnis_eur;
+      return `<tr><td style="white-space:nowrap">${esc(r.zeit)}</td>
+      <td><span class="tag" style="border-color:var(${SERIES[r.strategie]})">${esc(SHORT[r.strategie] || r.strategie)}</span></td>
+      <td><b>${esc(sym(r.symbol))}</b></td><td style="white-space:nowrap">${r.seite === "Kauf" ? "▲ Kauf" : "▼ Verkauf"}</td>
+      <td class="num">${(+r.menge).toLocaleString("de-DE", { maximumFractionDigits: 6 })}</td>
+      <td class="num">${(+r.preis_usd).toLocaleString("de-DE", { maximumFractionDigits: 4 })} $</td>
+      <td class="num">${eur(+r.betrag_eur)}</td><td class="num">${eur(+r.gebuehr_eur)}</td>
+      <td class="num ${res == null ? "" : cls(res)}">${res == null ? "" : eur(res, true)}</td>
+      <td class="why">${esc(r.grund)}</td></tr>`; }).join("") + `</tbody></table>`;
+}
+
+function seg(id, key, fn) {
+  document.getElementById(id).addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    state[key] = b.dataset.r || b.dataset.f;
+    [...e.currentTarget.children].forEach(c => c.setAttribute("aria-pressed", c === b));
+    fn();
+  });
+}
+seg("range", "range", renderChart);
+seg("filter", "filter", renderTrades);
+window.addEventListener("resize", () => state.status && renderChart());
+load();
+setInterval(load, 60000);
+</script>
+</body>
+</html>
