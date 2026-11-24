@@ -19,3 +19,5 @@
 2026-11-24 18:41:34 [ruecksetzer] Durchlauf fertig: Wert 499.69 € (Start 500 €), 1 offene Position(en), 1 Aktion(en)
 2026-11-24 19:32:52 [momentum] Durchlauf fertig: Wert 498.59 € (Start 500 €), 1 offene Position(en), 0 Aktion(en)
 2026-11-24 19:32:52 [ruecksetzer] Durchlauf fertig: Wert 498.67 € (Start 500 €), 0 offene Position(en), 0 Aktion(en)
+2026-11-24 20:33:54 [momentum] Durchlauf fertig: Wert 498.41 € (Start 500 €), 1 offene Position(en), 0 Aktion(en)
+2026-11-24 20:33:54 [ruecksetzer] Durchlauf fertig: Wert 498.67 € (Start 500 €), 0 offene Position(en), 0 Aktion(en)
