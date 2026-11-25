@@ -3,3 +3,5 @@ zeit,strategie,symbol,seite,menge,preis_usd,betrag_eur,gebuehr_eur,ergebnis_eur,
 2026-11-24 16:56,ruecksetzer,SOFI,Kauf,4.36242,12.7200,49.99,1.00,,"RSI 29 (überverkauft), Kurs nahe Trend-EMA100"
 2026-11-24 18:41,ruecksetzer,SOFI,Verkauf,4.36242,12.8900,50.66,1.00,-1.33,RSI 56 erholt (+1.4 %)
 2026-11-24 21:25,momentum,ETHUSD,Verkauf,0.0320627,1671.3100,48.28,1.00,-2.63,Haltedauer 9 h erreicht (-1.1 %)
+2026-11-25 03:02,ruecksetzer,BTCUSD,Kauf,0.000920905,59103.7600,49.04,1.00,,"RSI 28 (überverkauft), Kurs nahe Trend-EMA100"
+2026-11-25 03:02,ruecksetzer,DOGEUSD,Kauf,996.37,0.0546,49.04,1.00,,"RSI 25 (überverkauft), Kurs nahe Trend-EMA100"

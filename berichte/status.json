@@ -1,5 +1,5 @@
 {
- "stand": "2026-11-25 01:43",
+ "stand": "2026-11-25 03:02",
  "hinweis": "Probehandel bei Alpaca (Paper). Kein echtes Geld. Gebühren wie Trade Republic simuliert (1 € je Order).",
  "strategien": {
   "momentum": {
@@ -26,16 +26,44 @@
   },
   "ruecksetzer": {
    "start_eur": 500,
-   "wert_eur": 498.67,
-   "rendite_prozent": -0.27,
-   "bargeld_eur": 498.67,
-   "gebuehren_eur": 2.0,
+   "wert_eur": 546.11,
+   "rendite_prozent": 9.22,
+   "bargeld_eur": 398.6,
+   "gebuehren_eur": 4.0,
    "trades_abgeschlossen": 1,
    "gewinnquote_prozent": 0.0,
    "ergebnis_heute_eur": 0,
    "bester_trade_eur": -1.33,
    "schlechtester_trade_eur": -1.33,
-   "positionen": [],
+   "positionen": [
+    {
+     "symbol": "BTCUSD",
+     "menge": 0.000918602,
+     "seit": "2026-11-25T02:02:00.388773+00:00",
+     "einstand_usd": 59103.76,
+     "kurs_usd": 59207.9,
+     "wert_eur": 49.0,
+     "ergebnis_prozent": 0.18
+    },
+    {
+     "symbol": "DOGEUSD",
+     "menge": 993.879056841,
+     "seit": "2026-11-25T02:02:00.388773+00:00",
+     "einstand_usd": 0.0546,
+     "kurs_usd": 0.0555,
+     "wert_eur": 49.66,
+     "ergebnis_prozent": 1.52
+    },
+    {
+     "symbol": "ETHUSD",
+     "menge": 0.032831904,
+     "seit": "2026-11-25T02:02:00.388773+00:00",
+     "einstand_usd": 1654.252,
+     "kurs_usd": 1651.65,
+     "wert_eur": 48.85,
+     "ergebnis_prozent": -0.16
+    }
+   ],
    "gesperrt": null,
    "name": "Rücksetzer kaufen",
    "regeln": {
