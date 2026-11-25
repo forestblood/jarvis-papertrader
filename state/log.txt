@@ -62,3 +62,7 @@
 2026-11-25 12:21:59 [ruecksetzer] Durchlauf fertig: Wert 491.86 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-25 13:24:40 [momentum] Durchlauf fertig: Wert 497.25 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-25 13:24:40 [ruecksetzer] Durchlauf fertig: Wert 491.86 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-25 14:47:47 [momentum] Durchlauf fertig: Wert 497.25 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-25 14:47:47 [ruecksetzer] Kauf AVAX/USD: RSI 30 (überverkauft), Kurs nahe Trend-EMA100
+2026-11-25 14:47:47 [ruecksetzer] Kauf DOGE/USD: RSI 28 (überverkauft), Kurs nahe Trend-EMA100
+2026-11-25 14:47:47 [ruecksetzer] Durchlauf fertig: Wert 491.86 € (Start 500 €), 0 offene Position(en), 2 Aktion(en), US-Börse zu – nur Krypto

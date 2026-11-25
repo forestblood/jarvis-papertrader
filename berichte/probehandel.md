@@ -3,7 +3,7 @@ type: topic
 tags: [finanzen, trading]
 ---
 
-# Probehandel – Stand 2026-11-25 13:24
+# Probehandel – Stand 2026-11-25 14:47
 
 Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jede Order kostet hier wie bei Trade Republic 1 €.
 
@@ -17,12 +17,21 @@ Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jed
 
 | Startkapital | Wert jetzt | Rendite | Trades | Gewinnquote | Gebühren |
 |---|---|---|---|---|---|
-| 500 € | 491.86 € | -1.63 % | 4 | 0.0 % | 8.00 € |
+| 500 € | 490.44 € | -1.91 % | 4 | 0.0 % | 10.00 € |
+
+Offene Positionen:
+
+| Symbol | Wert | Ergebnis |
+|---|---|---|
+| AVAXUSD | 48.87 € | +0.07 % |
+| DOGEUSD | 49.67 € | +1.62 % |
 
 ## Letzte Ausführungen
 
 | Zeit | Strategie | Symbol | Seite | Betrag | Ergebnis | Grund |
 |---|---|---|---|---|---|---|
+| 2026-11-25 14:47 | ruecksetzer | DOGEUSD | Kauf | 49.00 € |  | RSI 28 (überverkauft), Kurs nahe Trend-EMA100 |
+| 2026-11-25 14:47 | ruecksetzer | AVAXUSD | Kauf | 48.96 € |  | RSI 30 (überverkauft), Kurs nahe Trend-EMA100 |
 | 2026-11-25 11:22 | ruecksetzer | ETHUSD | Verkauf | 48.57 € | -2.35 € | Haltedauer 8 h erreicht (-0.5 %) |
 | 2026-11-25 11:22 | ruecksetzer | BTCUSD | Verkauf | 48.72 € | -2.19 € | Haltedauer 8 h erreicht (-0.3 %) |
 | 2026-11-25 07:41 | ruecksetzer | DOGEUSD | Verkauf | 49.02 € | -1.89 € | RSI 62 erholt (+1.5 %) |

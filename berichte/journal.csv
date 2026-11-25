@@ -9,3 +9,5 @@ zeit,strategie,symbol,seite,menge,preis_usd,betrag_eur,gebuehr_eur,ergebnis_eur,
 2026-11-25 07:41,ruecksetzer,DOGEUSD,Verkauf,993.879,0.0547,49.02,1.00,-1.89,RSI 62 erholt (+1.5 %)
 2026-11-25 11:22,ruecksetzer,BTCUSD,Verkauf,0.000918602,58866.3540,48.72,1.00,-2.19,Haltedauer 8 h erreicht (-0.3 %)
 2026-11-25 11:22,ruecksetzer,ETHUSD,Verkauf,0.0328319,1642.2500,48.57,1.00,-2.35,Haltedauer 8 h erreicht (-0.5 %)
+2026-11-25 14:47,ruecksetzer,AVAXUSD,Kauf,8.53585,6.3670,48.96,1.00,,"RSI 30 (überverkauft), Kurs nahe Trend-EMA100"
+2026-11-25 14:47,ruecksetzer,DOGEUSD,Kauf,1023.76,0.0531,49.00,1.00,,"RSI 28 (überverkauft), Kurs nahe Trend-EMA100"
