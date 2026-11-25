@@ -3,7 +3,7 @@ type: topic
 tags: [finanzen, trading]
 ---
 
-# Probehandel – Stand 2026-11-25 04:48
+# Probehandel – Stand 2026-11-25 05:52
 
 Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jede Order kostet hier wie bei Trade Republic 1 €.
 
@@ -17,15 +17,15 @@ Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jed
 
 | Startkapital | Wert jetzt | Rendite | Trades | Gewinnquote | Gebühren |
 |---|---|---|---|---|---|
-| 500 € | 496.52 € | -0.70 % | 1 | 0.0 % | 5.00 € |
+| 500 € | 495.90 € | -0.82 % | 1 | 0.0 % | 5.00 € |
 
 Offene Positionen:
 
 | Symbol | Wert | Ergebnis |
 |---|---|---|
-| BTCUSD | 49.15 € | +0.48 % |
+| BTCUSD | 48.73 € | -0.37 % |
 | DOGEUSD | 49.66 € | +1.52 % |
-| ETHUSD | 49.17 € | +0.50 % |
+| ETHUSD | 48.97 € | +0.08 % |
 
 ## Letzte Ausführungen
 
