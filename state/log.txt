@@ -47,3 +47,6 @@
 2026-11-25 05:52:01 [ruecksetzer] Durchlauf fertig: Wert 495.90 € (Start 500 €), 3 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-25 06:44:33 [momentum] Durchlauf fertig: Wert 497.25 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-25 06:44:34 [ruecksetzer] Durchlauf fertig: Wert 495.84 € (Start 500 €), 3 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-25 07:41:55 [momentum] Durchlauf fertig: Wert 497.25 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-25 07:41:55 [ruecksetzer] Verkauf DOGE/USD: RSI 62 erholt (+1.5 %)
+2026-11-25 07:41:55 [ruecksetzer] Durchlauf fertig: Wert 496.11 € (Start 500 €), 3 offene Position(en), 1 Aktion(en), US-Börse zu – nur Krypto
