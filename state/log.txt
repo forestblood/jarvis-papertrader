@@ -76,3 +76,5 @@
 2026-11-25 18:29:43 [ruecksetzer] Verkauf AVAX/USD: RSI 66 erholt (+1.7 %)
 2026-11-25 18:29:43 [ruecksetzer] Verkauf DOGE/USD: RSI 69 erholt (+0.6 %)
 2026-11-25 18:29:43 [ruecksetzer] Durchlauf fertig: Wert 490.73 € (Start 500 €), 2 offene Position(en), 2 Aktion(en)
+2026-11-25 19:10:57 [momentum] Durchlauf fertig: Wert 497.25 € (Start 500 €), 0 offene Position(en), 0 Aktion(en)
+2026-11-25 19:10:58 [ruecksetzer] Durchlauf fertig: Wert 489.21 € (Start 500 €), 0 offene Position(en), 0 Aktion(en)
