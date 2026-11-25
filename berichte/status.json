@@ -1,5 +1,5 @@
 {
- "stand": "2026-11-25 23:30",
+ "stand": "2026-11-26 00:22",
  "hinweis": "Probehandel bei Alpaca (Paper). Kein echtes Geld. Gebühren wie Trade Republic simuliert (1 € je Order).",
  "strategien": {
   "momentum": {
@@ -32,7 +32,7 @@
    "gebuehren_eur": 12.0,
    "trades_abgeschlossen": 6,
    "gewinnquote_prozent": 0.0,
-   "ergebnis_heute_eur": -8.83,
+   "ergebnis_heute_eur": 0,
    "bester_trade_eur": -1.0,
    "schlechtester_trade_eur": -2.35,
    "positionen": [],
