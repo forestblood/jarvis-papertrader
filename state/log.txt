@@ -54,3 +54,7 @@
 2026-11-25 09:08:39 [ruecksetzer] Durchlauf fertig: Wert 493.75 € (Start 500 €), 2 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-25 10:14:28 [momentum] Durchlauf fertig: Wert 497.25 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-25 10:14:28 [ruecksetzer] Durchlauf fertig: Wert 493.99 € (Start 500 €), 2 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-25 11:22:26 [momentum] Durchlauf fertig: Wert 497.25 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-25 11:22:27 [ruecksetzer] Verkauf BTC/USD: Haltedauer 8 h erreicht (-0.3 %)
+2026-11-25 11:22:27 [ruecksetzer] Verkauf ETH/USD: Haltedauer 8 h erreicht (-0.5 %)
+2026-11-25 11:22:27 [ruecksetzer] Durchlauf fertig: Wert 494.04 € (Start 500 €), 2 offene Position(en), 2 Aktion(en), US-Börse zu – nur Krypto
