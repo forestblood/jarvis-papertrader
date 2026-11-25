@@ -5,3 +5,4 @@ zeit,strategie,symbol,seite,menge,preis_usd,betrag_eur,gebuehr_eur,ergebnis_eur,
 2026-11-24 21:25,momentum,ETHUSD,Verkauf,0.0320627,1671.3100,48.28,1.00,-2.63,Haltedauer 9 h erreicht (-1.1 %)
 2026-11-25 03:02,ruecksetzer,BTCUSD,Kauf,0.000920905,59103.7600,49.04,1.00,,"RSI 28 (überverkauft), Kurs nahe Trend-EMA100"
 2026-11-25 03:02,ruecksetzer,DOGEUSD,Kauf,996.37,0.0546,49.04,1.00,,"RSI 25 (überverkauft), Kurs nahe Trend-EMA100"
+2026-11-25 03:02,ruecksetzer,ETHUSD,Kauf,0.0329142,1654.2520,49.05,1.00,,"RSI 28 (überverkauft), Kurs nahe Trend-EMA100"

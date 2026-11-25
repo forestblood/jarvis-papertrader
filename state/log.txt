@@ -39,3 +39,5 @@
 2026-11-25 03:02:01 [ruecksetzer] Kauf DOGE/USD: RSI 25 (überverkauft), Kurs nahe Trend-EMA100
 2026-11-25 03:02:01 [ruecksetzer] Kauf ETH/USD: RSI 28 (überverkauft), Kurs nahe Trend-EMA100
 2026-11-25 03:02:01 [ruecksetzer] Durchlauf fertig: Wert 498.67 € (Start 500 €), 0 offene Position(en), 3 Aktion(en), US-Börse zu – nur Krypto
+2026-11-25 03:54:19 [momentum] Durchlauf fertig: Wert 497.25 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-25 03:54:19 [ruecksetzer] Durchlauf fertig: Wert 496.11 € (Start 500 €), 3 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto

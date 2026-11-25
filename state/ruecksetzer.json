@@ -1,22 +1,21 @@
 {
  "start_eur": 500,
- "cash_eur": 398.5969957259132,
- "gebuehren_eur": 4.0,
- "last_fill": "2026-11-25T02:02:01.231440674Z",
+ "cash_eur": 348.54441497286814,
+ "gebuehren_eur": 5.0,
+ "last_fill": "2026-11-25T02:02:01.253211Z",
  "seen_orders": [
   "c66dc965-f411-4825-8575-8ce377c45ebb",
   "e111ea38-3707-40ef-95dc-fd956b1e65c5",
   "8a509c91-8caf-43fc-bf00-88b6330e1759",
-  "1f21bc39-8d8e-4489-a7b7-a1f12a6c7f86"
+  "1f21bc39-8d8e-4489-a7b7-a1f12a6c7f86",
+  "515d0a2b-6857-45aa-a6df-9f69a1bcc264"
  ],
  "entries": {
   "BTCUSD": "2026-11-25T02:02:00.388773+00:00",
   "DOGEUSD": "2026-11-25T02:02:00.388773+00:00",
   "ETHUSD": "2026-11-25T02:02:00.388773+00:00"
  },
- "reasons": {
-  "515d0a2b-6857-45aa-a6df-9f69a1bcc264": "RSI 28 (\u00fcberverkauft), Kurs nahe Trend-EMA100"
- },
+ "reasons": {},
  "day": "2026-11-25",
  "day_start_equity": 498.66811859018924,
  "lots": {
@@ -27,6 +26,10 @@
   "DOGEUSD": {
    "qty": 996.369981796,
    "cost_eur": 50.036034483375154
+  },
+  "ETHUSD": {
+   "qty": 0.03291419,
+   "cost_eur": 50.05258075304504
   }
  },
  "cooldown": {
