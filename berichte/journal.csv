@@ -20,3 +20,6 @@ zeit,strategie,symbol,seite,menge,preis_usd,betrag_eur,gebuehr_eur,ergebnis_eur,
 2026-11-26 15:49,ruecksetzer,AVAXUSD,Kauf,8.23049,6.6014,48.95,1.00,,"RSI 28 (überverkauft), Kurs nahe Trend-EMA100"
 2026-11-26 17:47,ruecksetzer,AVAXUSD,Verkauf,8.20991,6.5790,48.66,1.00,-2.16,RSI 56 erholt (+0.1 %)
 2026-11-26 22:20,momentum,SOLUSD,Kauf,0.76095,71.5372,49.04,1.00,,"Ausbruch über 60-Min-Hoch 71.48, Volumen 1.9x"
+2026-11-27 00:13,ruecksetzer,AVAXUSD,Kauf,8.25546,6.5836,48.96,1.00,,"RSI 26 (überverkauft), Kurs nahe Trend-EMA100"
+2026-11-27 00:13,ruecksetzer,DOGEUSD,Kauf,965.328,0.0564,49.03,1.00,,"RSI 29 (überverkauft), Kurs nahe Trend-EMA100"
+2026-11-27 00:13,ruecksetzer,ETHUSD,Kauf,0.0322633,1687.2300,49.04,1.00,,"RSI 27 (überverkauft), Kurs nahe Trend-EMA100"
