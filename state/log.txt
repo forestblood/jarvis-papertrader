@@ -138,3 +138,6 @@
 2026-11-26 20:30:54 [ruecksetzer] Durchlauf fertig: Wert 483.09 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-26 21:27:40 [momentum] Durchlauf fertig: Wert 497.25 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-26 21:27:40 [ruecksetzer] Durchlauf fertig: Wert 483.09 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-26 22:20:19 [momentum] Kauf SOL/USD: Ausbruch über 60-Min-Hoch 71.48, Volumen 1.9x
+2026-11-26 22:20:19 [momentum] Durchlauf fertig: Wert 497.25 € (Start 500 €), 0 offene Position(en), 1 Aktion(en), US-Börse zu – nur Krypto
+2026-11-26 22:20:19 [ruecksetzer] Durchlauf fertig: Wert 483.09 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
