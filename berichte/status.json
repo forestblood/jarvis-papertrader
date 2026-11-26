@@ -1,11 +1,11 @@
 {
- "stand": "2026-11-26 22:20",
+ "stand": "2026-11-26 23:17",
  "hinweis": "Probehandel bei Alpaca (Paper). Kein echtes Geld. Gebühren wie Trade Republic simuliert (1 € je Order).",
  "strategien": {
   "momentum": {
    "start_eur": 500,
-   "wert_eur": 496.06,
-   "rendite_prozent": -0.79,
+   "wert_eur": 496.17,
+   "rendite_prozent": -0.77,
    "bargeld_eur": 447.2,
    "gebuehren_eur": 3.0,
    "trades_abgeschlossen": 1,
@@ -19,9 +19,9 @@
      "menge": 0.759048111,
      "seit": "2026-11-26T21:20:18.790439+00:00",
      "einstand_usd": 71.5372,
-     "kurs_usd": 71.4434,
-     "wert_eur": 48.85,
-     "ergebnis_prozent": -0.13
+     "kurs_usd": 71.6024,
+     "wert_eur": 48.96,
+     "ergebnis_prozent": 0.09
     }
    ],
    "gesperrt": null,
