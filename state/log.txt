@@ -125,3 +125,5 @@
 2026-11-26 15:49:33 [momentum] Durchlauf fertig: Wert 497.25 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-26 15:49:34 [ruecksetzer] Kauf AVAX/USD: RSI 28 (überverkauft), Kurs nahe Trend-EMA100
 2026-11-26 15:49:34 [ruecksetzer] Durchlauf fertig: Wert 485.38 € (Start 500 €), 0 offene Position(en), 1 Aktion(en), US-Börse zu – nur Krypto
+2026-11-26 16:45:25 [momentum] Durchlauf fertig: Wert 497.25 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-26 16:45:25 [ruecksetzer] Durchlauf fertig: Wert 483.62 € (Start 500 €), 1 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
