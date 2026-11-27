@@ -154,3 +154,6 @@
 2026-11-27 02:20:05 [ruecksetzer] Verkauf AVAX/USD: RSI 61 erholt (+1.0 %)
 2026-11-27 02:20:05 [ruecksetzer] Verkauf ETH/USD: RSI 62 erholt (+0.7 %)
 2026-11-27 02:20:05 [ruecksetzer] Durchlauf fertig: Wert 480.54 € (Start 500 €), 3 offene Position(en), 2 Aktion(en), US-Börse zu – nur Krypto
+2026-11-27 03:29:57 [momentum] Durchlauf fertig: Wert 496.68 € (Start 500 €), 1 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-27 03:29:58 [ruecksetzer] Verkauf DOGE/USD: RSI 77 erholt (+0.0 %)
+2026-11-27 03:29:58 [ruecksetzer] Durchlauf fertig: Wert 478.27 € (Start 500 €), 1 offene Position(en), 1 Aktion(en), US-Börse zu – nur Krypto

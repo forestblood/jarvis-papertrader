@@ -3,7 +3,7 @@ type: topic
 tags: [finanzen, trading]
 ---
 
-# Probehandel – Stand 2026-11-27 02:20
+# Probehandel – Stand 2026-11-27 03:29
 
 Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jede Order kostet hier wie bei Trade Republic 1 €.
 
@@ -11,30 +11,25 @@ Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jed
 
 | Startkapital | Wert jetzt | Rendite | Trades | Gewinnquote | Gebühren |
 |---|---|---|---|---|---|
-| 500 € | 495.90 € | -0.82 % | 1 | 0.0 % | 3.00 € |
+| 500 € | 496.68 € | -0.66 % | 1 | 0.0 % | 3.00 € |
 
 Offene Positionen:
 
 | Symbol | Wert | Ergebnis |
 |---|---|---|
-| SOLUSD | 48.69 € | -0.46 % |
+| SOLUSD | 49.47 € | +1.13 % |
 
 ## Rücksetzer kaufen
 
 | Startkapital | Wert jetzt | Rendite | Trades | Gewinnquote | Gebühren |
 |---|---|---|---|---|---|
-| 500 € | 478.27 € | -4.35 % | 11 | 0.0 % | 23.00 € |
-
-Offene Positionen:
-
-| Symbol | Wert | Ergebnis |
-|---|---|---|
-| DOGEUSD | 48.92 € | +0.03 % |
+| 500 € | 478.17 € | -4.37 % | 12 | 0.0 % | 24.00 € |
 
 ## Letzte Ausführungen
 
 | Zeit | Strategie | Symbol | Seite | Betrag | Ergebnis | Grund |
 |---|---|---|---|---|---|---|
+| 2026-11-27 03:29 | ruecksetzer | DOGEUSD | Verkauf | 49.82 € | -1.07 € | RSI 77 erholt (+0.0 %) |
 | 2026-11-27 02:20 | ruecksetzer | ETHUSD | Verkauf | 49.25 € | -1.66 € | RSI 62 erholt (+0.7 %) |
 | 2026-11-27 02:20 | ruecksetzer | AVAXUSD | Verkauf | 49.04 € | -1.8 € | RSI 61 erholt (+1.0 %) |
 | 2026-11-27 00:13 | ruecksetzer | ETHUSD | Kauf | 49.04 € |  | RSI 27 (überverkauft), Kurs nahe Trend-EMA100 |
@@ -49,4 +44,3 @@ Offene Positionen:
 | 2026-11-26 11:43 | ruecksetzer | AVAXUSD | Kauf | 48.92 € |  | RSI 30 (überverkauft), Kurs nahe Trend-EMA100 |
 | 2026-11-25 18:29 | ruecksetzer | DOGEUSD | Verkauf | 49.88 € | -1.0 € | RSI 69 erholt (+0.6 %) |
 | 2026-11-25 18:29 | ruecksetzer | AVAXUSD | Verkauf | 49.44 € | -1.4 € | RSI 66 erholt (+1.7 %) |
-| 2026-11-25 14:47 | ruecksetzer | DOGEUSD | Kauf | 49.00 € |  | RSI 28 (überverkauft), Kurs nahe Trend-EMA100 |
