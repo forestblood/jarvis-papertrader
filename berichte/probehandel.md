@@ -3,7 +3,7 @@ type: topic
 tags: [finanzen, trading]
 ---
 
-# Probehandel – Stand 2026-11-27 01:06
+# Probehandel – Stand 2026-11-27 02:20
 
 Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jede Order kostet hier wie bei Trade Republic 1 €.
 
@@ -11,32 +11,32 @@ Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jed
 
 | Startkapital | Wert jetzt | Rendite | Trades | Gewinnquote | Gebühren |
 |---|---|---|---|---|---|
-| 500 € | 495.74 € | -0.85 % | 1 | 0.0 % | 3.00 € |
+| 500 € | 495.90 € | -0.82 % | 1 | 0.0 % | 3.00 € |
 
 Offene Positionen:
 
 | Symbol | Wert | Ergebnis |
 |---|---|---|
-| SOLUSD | 48.53 € | -0.79 % |
+| SOLUSD | 48.69 € | -0.46 % |
 
 ## Rücksetzer kaufen
 
 | Startkapital | Wert jetzt | Rendite | Trades | Gewinnquote | Gebühren |
 |---|---|---|---|---|---|
-| 500 € | 479.78 € | -4.04 % | 9 | 0.0 % | 21.00 € |
+| 500 € | 478.27 € | -4.35 % | 11 | 0.0 % | 23.00 € |
 
 Offene Positionen:
 
 | Symbol | Wert | Ergebnis |
 |---|---|---|
-| AVAXUSD | 48.86 € | +0.04 % |
 | DOGEUSD | 48.92 € | +0.03 % |
-| ETHUSD | 48.95 € | +0.06 % |
 
 ## Letzte Ausführungen
 
 | Zeit | Strategie | Symbol | Seite | Betrag | Ergebnis | Grund |
 |---|---|---|---|---|---|---|
+| 2026-11-27 02:20 | ruecksetzer | ETHUSD | Verkauf | 49.25 € | -1.66 € | RSI 62 erholt (+0.7 %) |
+| 2026-11-27 02:20 | ruecksetzer | AVAXUSD | Verkauf | 49.04 € | -1.8 € | RSI 61 erholt (+1.0 %) |
 | 2026-11-27 00:13 | ruecksetzer | ETHUSD | Kauf | 49.04 € |  | RSI 27 (überverkauft), Kurs nahe Trend-EMA100 |
 | 2026-11-27 00:13 | ruecksetzer | DOGEUSD | Kauf | 49.03 € |  | RSI 29 (überverkauft), Kurs nahe Trend-EMA100 |
 | 2026-11-27 00:13 | ruecksetzer | AVAXUSD | Kauf | 48.96 € |  | RSI 26 (überverkauft), Kurs nahe Trend-EMA100 |
@@ -50,5 +50,3 @@ Offene Positionen:
 | 2026-11-25 18:29 | ruecksetzer | DOGEUSD | Verkauf | 49.88 € | -1.0 € | RSI 69 erholt (+0.6 %) |
 | 2026-11-25 18:29 | ruecksetzer | AVAXUSD | Verkauf | 49.44 € | -1.4 € | RSI 66 erholt (+1.7 %) |
 | 2026-11-25 14:47 | ruecksetzer | DOGEUSD | Kauf | 49.00 € |  | RSI 28 (überverkauft), Kurs nahe Trend-EMA100 |
-| 2026-11-25 14:47 | ruecksetzer | AVAXUSD | Kauf | 48.96 € |  | RSI 30 (überverkauft), Kurs nahe Trend-EMA100 |
-| 2026-11-25 11:22 | ruecksetzer | ETHUSD | Verkauf | 48.57 € | -2.35 € | Haltedauer 8 h erreicht (-0.5 %) |
