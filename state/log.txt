@@ -161,3 +161,6 @@
 2026-11-27 04:32:28 [ruecksetzer] Durchlauf fertig: Wert 478.17 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-27 05:38:29 [momentum] Durchlauf fertig: Wert 497.05 € (Start 500 €), 1 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-27 05:38:30 [ruecksetzer] Durchlauf fertig: Wert 478.17 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-27 06:38:22 [momentum] Verkauf SOL/USD: Haltedauer 8 h erreicht (+2.6 %)
+2026-11-27 06:38:22 [momentum] Durchlauf fertig: Wert 497.42 € (Start 500 €), 1 offene Position(en), 1 Aktion(en), US-Börse zu – nur Krypto
+2026-11-27 06:38:22 [ruecksetzer] Durchlauf fertig: Wert 478.17 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
