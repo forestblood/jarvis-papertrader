@@ -1,5 +1,5 @@
 {
- "stand": "2026-11-27 16:39",
+ "stand": "2026-11-27 17:42",
  "hinweis": "Probehandel bei Alpaca (Paper). Kein echtes Geld. Gebühren wie Trade Republic simuliert (1 € je Order).",
  "strategien": {
   "momentum": {
@@ -26,8 +26,8 @@
   },
   "ruecksetzer": {
    "start_eur": 500,
-   "wert_eur": 474.38,
-   "rendite_prozent": -5.12,
+   "wert_eur": 474.77,
+   "rendite_prozent": -5.05,
    "bargeld_eur": 328.2,
    "gebuehren_eur": 27.0,
    "trades_abgeschlossen": 12,
@@ -41,18 +41,18 @@
      "menge": 8.16360612,
      "seit": "2026-11-27T14:41:36.093295+00:00",
      "einstand_usd": 6.635,
-     "kurs_usd": 6.6212,
-     "wert_eur": 48.7,
-     "ergebnis_prozent": -0.21
+     "kurs_usd": 6.64,
+     "wert_eur": 48.83,
+     "ergebnis_prozent": 0.07
     },
     {
      "symbol": "BTCUSD",
      "menge": 0.00090178,
      "seit": "2026-11-27T14:41:36.093295+00:00",
      "einstand_usd": 60205.3751,
-     "kurs_usd": 60087.961,
-     "wert_eur": 48.82,
-     "ergebnis_prozent": -0.19
+     "kurs_usd": 60389.37,
+     "wert_eur": 49.06,
+     "ergebnis_prozent": 0.31
     },
     {
      "symbol": "DOGEUSD",
