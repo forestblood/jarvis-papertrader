@@ -3,7 +3,7 @@ type: topic
 tags: [finanzen, trading]
 ---
 
-# Probehandel – Stand 2026-11-27 13:31
+# Probehandel – Stand 2026-11-27 14:50
 
 Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jede Order kostet hier wie bei Trade Republic 1 €.
 
@@ -11,7 +11,13 @@ Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jed
 
 | Startkapital | Wert jetzt | Rendite | Trades | Gewinnquote | Gebühren |
 |---|---|---|---|---|---|
-| 500 € | 496.12 € | -0.78 % | 2 | 0.0 % | 4.00 € |
+| 500 € | 494.81 € | -1.04 % | 2 | 0.0 % | 5.00 € |
+
+Offene Positionen:
+
+| Symbol | Wert | Ergebnis |
+|---|---|---|
+| ETHUSD | 48.74 € | -0.38 % |
 
 ## Rücksetzer kaufen
 
@@ -23,6 +29,7 @@ Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jed
 
 | Zeit | Strategie | Symbol | Seite | Betrag | Ergebnis | Grund |
 |---|---|---|---|---|---|---|
+| 2026-11-27 14:50 | momentum | ETHUSD | Kauf | 49.04 € |  | Ausbruch über 60-Min-Hoch 1723.01, Volumen 2.5x |
 | 2026-11-27 06:38 | momentum | SOLUSD | Verkauf | 49.92 € | -1.0 € | Haltedauer 8 h erreicht (+2.6 %) |
 | 2026-11-27 03:29 | ruecksetzer | DOGEUSD | Verkauf | 49.82 € | -1.07 € | RSI 77 erholt (+0.0 %) |
 | 2026-11-27 02:20 | ruecksetzer | ETHUSD | Verkauf | 49.25 € | -1.66 € | RSI 62 erholt (+0.7 %) |
@@ -37,4 +44,3 @@ Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jed
 | 2026-11-26 13:40 | ruecksetzer | AVAXUSD | Verkauf | 48.87 € | -1.92 € | RSI 56 erholt (-0.2 %) |
 | 2026-11-26 11:43 | ruecksetzer | SOLUSD | Kauf | 49.02 € |  | RSI 30 (überverkauft), Kurs nahe Trend-EMA100 |
 | 2026-11-26 11:43 | ruecksetzer | AVAXUSD | Kauf | 48.92 € |  | RSI 30 (überverkauft), Kurs nahe Trend-EMA100 |
-| 2026-11-25 18:29 | ruecksetzer | DOGEUSD | Verkauf | 49.88 € | -1.0 € | RSI 69 erholt (+0.6 %) |
