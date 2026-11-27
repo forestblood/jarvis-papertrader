@@ -181,3 +181,9 @@
 2026-11-27 14:50:28 [momentum] Kauf ETH/USD: Ausbruch über 60-Min-Hoch 1723.01, Volumen 2.5x
 2026-11-27 14:50:28 [momentum] Durchlauf fertig: Wert 496.12 € (Start 500 €), 0 offene Position(en), 1 Aktion(en), US-Börse zu – nur Krypto
 2026-11-27 14:50:30 [ruecksetzer] Durchlauf fertig: Wert 478.17 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-27 15:41:36 [momentum] Verkauf ETH/USD: Stop-Loss bei -2.1 %
+2026-11-27 15:41:36 [momentum] Durchlauf fertig: Wert 493.96 € (Start 500 €), 1 offene Position(en), 1 Aktion(en)
+2026-11-27 15:41:37 [ruecksetzer] Kauf AVAX/USD: RSI 16 (überverkauft), Kurs nahe Trend-EMA100
+2026-11-27 15:41:37 [ruecksetzer] Kauf BTC/USD: RSI 18 (überverkauft), Kurs nahe Trend-EMA100
+2026-11-27 15:41:37 [ruecksetzer] Kauf DOGE/USD: RSI 21 (überverkauft), Kurs nahe Trend-EMA100
+2026-11-27 15:41:37 [ruecksetzer] Durchlauf fertig: Wert 478.17 € (Start 500 €), 0 offene Position(en), 3 Aktion(en)

@@ -28,3 +28,7 @@ zeit,strategie,symbol,seite,menge,preis_usd,betrag_eur,gebuehr_eur,ergebnis_eur,
 2026-11-27 03:29,ruecksetzer,DOGEUSD,Verkauf,962.915,0.0574,49.82,1.00,-1.07,RSI 77 erholt (+0.0 %)
 2026-11-27 06:38,momentum,SOLUSD,Verkauf,0.759048,72.9940,49.92,1.00,-1.0,Haltedauer 8 h erreicht (+2.6 %)
 2026-11-27 14:50,momentum,ETHUSD,Kauf,0.0315308,1726.5360,49.04,1.00,,"Ausbruch über 60-Min-Hoch 1723.01, Volumen 2.5x"
+2026-11-27 15:41,momentum,ETHUSD,Verkauf,0.031452,1686.1270,47.78,1.00,-3.14,Stop-Loss bei -2.1 %
+2026-11-27 15:41,ruecksetzer,AVAXUSD,Kauf,8.18407,6.6350,48.92,1.00,,"RSI 16 (überverkauft), Kurs nahe Trend-EMA100"
+2026-11-27 15:41,ruecksetzer,BTCUSD,Kauf,0.000904041,60205.3751,49.03,1.00,,"RSI 18 (überverkauft), Kurs nahe Trend-EMA100"
+2026-11-27 15:41,ruecksetzer,DOGEUSD,Kauf,944.78,0.0576,49.01,1.00,,"RSI 21 (überverkauft), Kurs nahe Trend-EMA100"

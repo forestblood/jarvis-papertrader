@@ -1,29 +1,19 @@
 {
- "stand": "2026-11-27 14:50",
+ "stand": "2026-11-27 15:41",
  "hinweis": "Probehandel bei Alpaca (Paper). Kein echtes Geld. Gebühren wie Trade Republic simuliert (1 € je Order).",
  "strategien": {
   "momentum": {
    "start_eur": 500,
-   "wert_eur": 494.81,
-   "rendite_prozent": -1.04,
-   "bargeld_eur": 446.07,
-   "gebuehren_eur": 5.0,
-   "trades_abgeschlossen": 2,
+   "wert_eur": 492.85,
+   "rendite_prozent": -1.43,
+   "bargeld_eur": 492.85,
+   "gebuehren_eur": 6.0,
+   "trades_abgeschlossen": 3,
    "gewinnquote_prozent": 0.0,
-   "ergebnis_heute_eur": -1.0,
+   "ergebnis_heute_eur": -4.14,
    "bester_trade_eur": -1.0,
-   "schlechtester_trade_eur": -2.63,
-   "positionen": [
-    {
-     "symbol": "ETHUSD",
-     "menge": 0.031451977,
-     "seit": "2026-11-27T13:50:24.802214+00:00",
-     "einstand_usd": 1726.536,
-     "kurs_usd": 1720.013,
-     "wert_eur": 48.74,
-     "ergebnis_prozent": -0.38
-    }
-   ],
+   "schlechtester_trade_eur": -3.14,
+   "positionen": [],
    "gesperrt": null,
    "name": "Momentum / Ausbruch",
    "regeln": {
@@ -36,16 +26,44 @@
   },
   "ruecksetzer": {
    "start_eur": 500,
-   "wert_eur": 478.17,
-   "rendite_prozent": -4.37,
-   "bargeld_eur": 478.17,
-   "gebuehren_eur": 24.0,
+   "wert_eur": 476.4,
+   "rendite_prozent": -4.72,
+   "bargeld_eur": 328.2,
+   "gebuehren_eur": 27.0,
    "trades_abgeschlossen": 12,
    "gewinnquote_prozent": 0.0,
    "ergebnis_heute_eur": -4.53,
    "bester_trade_eur": -1.0,
    "schlechtester_trade_eur": -2.35,
-   "positionen": [],
+   "positionen": [
+    {
+     "symbol": "AVAXUSD",
+     "menge": 8.16360612,
+     "seit": "2026-11-27T14:41:36.093295+00:00",
+     "einstand_usd": 6.635,
+     "kurs_usd": 6.7048,
+     "wert_eur": 49.31,
+     "ergebnis_prozent": 1.05
+    },
+    {
+     "symbol": "BTCUSD",
+     "menge": 0.00090178,
+     "seit": "2026-11-27T14:41:36.093295+00:00",
+     "einstand_usd": 60205.3751,
+     "kurs_usd": 60082.0,
+     "wert_eur": 48.81,
+     "ergebnis_prozent": -0.21
+    },
+    {
+     "symbol": "DOGEUSD",
+     "menge": 942.417962461,
+     "seit": "2026-11-27T14:41:36.093295+00:00",
+     "einstand_usd": 0.0576,
+     "kurs_usd": 0.059,
+     "wert_eur": 50.08,
+     "ergebnis_prozent": 2.44
+    }
+   ],
    "gesperrt": null,
    "name": "Rücksetzer kaufen",
    "regeln": {
