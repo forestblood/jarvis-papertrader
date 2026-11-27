@@ -210,3 +210,6 @@
 2026-11-27 23:58:40 [momentum] Durchlauf fertig: Wert 492.85 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-27 23:58:41 [ruecksetzer] Verkauf BTC/USD: Haltedauer 8 h erreicht (-0.7 %)
 2026-11-27 23:58:41 [ruecksetzer] Durchlauf fertig: Wert 470.67 € (Start 500 €), 3 offene Position(en), 1 Aktion(en), US-Börse zu – nur Krypto
+2026-11-28 00:44:54 [momentum] Durchlauf fertig: Wert 492.85 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-28 00:44:55 [ruecksetzer] Verkauf DOGE/USD: RSI 61 erholt (+0.3 %)
+2026-11-28 00:44:55 [ruecksetzer] Durchlauf fertig: Wert 469.23 € (Start 500 €), 2 offene Position(en), 1 Aktion(en), US-Börse zu – nur Krypto
