@@ -3,7 +3,7 @@ type: topic
 tags: [finanzen, trading]
 ---
 
-# Probehandel – Stand 2026-11-28 00:44
+# Probehandel – Stand 2026-11-28 01:35
 
 Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jede Order kostet hier wie bei Trade Republic 1 €.
 
@@ -17,18 +17,14 @@ Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jed
 
 | Startkapital | Wert jetzt | Rendite | Trades | Gewinnquote | Gebühren |
 |---|---|---|---|---|---|
-| 500 € | 420.19 € | -15.96 % | 15 | 0.0 % | 32.00 € |
-
-Offene Positionen:
-
-| Symbol | Wert | Ergebnis |
-|---|---|---|
-| AVAXUSD | 48.62 € | -0.46 % |
+| 500 € | 467.50 € | -6.50 % | 17 | 0.0 % | 34.00 € |
 
 ## Letzte Ausführungen
 
 | Zeit | Strategie | Symbol | Seite | Betrag | Ergebnis | Grund |
 |---|---|---|---|---|---|---|
+| 2026-11-28 01:35 | ruecksetzer | AVAXUSD | Verkauf | 48.97 € | -1.87 € | RSI 62 erholt (-0.5 %) |
+| 2026-11-28 00:44 | ruecksetzer | DOGEUSD | Verkauf | 48.96 € | -1.92 € | RSI 61 erholt (+0.3 %) |
 | 2026-11-27 23:58 | ruecksetzer | BTCUSD | Verkauf | 48.47 € | -2.44 € | Haltedauer 8 h erreicht (-0.7 %) |
 | 2026-11-27 23:06 | ruecksetzer | DOGEUSD | Kauf | 49.01 € |  | RSI 29 (überverkauft), Kurs nahe Trend-EMA100 |
 | 2026-11-27 23:06 | ruecksetzer | AVAXUSD | Kauf | 48.97 € |  | RSI 23 (überverkauft), Kurs nahe Trend-EMA100 |
@@ -42,5 +38,3 @@ Offene Positionen:
 | 2026-11-27 06:38 | momentum | SOLUSD | Verkauf | 49.92 € | -1.0 € | Haltedauer 8 h erreicht (+2.6 %) |
 | 2026-11-27 03:29 | ruecksetzer | DOGEUSD | Verkauf | 49.82 € | -1.07 € | RSI 77 erholt (+0.0 %) |
 | 2026-11-27 02:20 | ruecksetzer | ETHUSD | Verkauf | 49.25 € | -1.66 € | RSI 62 erholt (+0.7 %) |
-| 2026-11-27 02:20 | ruecksetzer | AVAXUSD | Verkauf | 49.04 € | -1.8 € | RSI 61 erholt (+1.0 %) |
-| 2026-11-27 00:13 | ruecksetzer | ETHUSD | Kauf | 49.04 € |  | RSI 27 (überverkauft), Kurs nahe Trend-EMA100 |

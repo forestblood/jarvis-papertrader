@@ -213,3 +213,6 @@
 2026-11-28 00:44:54 [momentum] Durchlauf fertig: Wert 492.85 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-28 00:44:55 [ruecksetzer] Verkauf DOGE/USD: RSI 61 erholt (+0.3 %)
 2026-11-28 00:44:55 [ruecksetzer] Durchlauf fertig: Wert 469.23 € (Start 500 €), 2 offene Position(en), 1 Aktion(en), US-Börse zu – nur Krypto
+2026-11-28 01:35:24 [momentum] Durchlauf fertig: Wert 492.85 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-28 01:35:25 [ruecksetzer] Verkauf AVAX/USD: RSI 62 erholt (-0.5 %)
+2026-11-28 01:35:25 [ruecksetzer] Durchlauf fertig: Wert 468.15 € (Start 500 €), 1 offene Position(en), 1 Aktion(en), US-Börse zu – nur Krypto
