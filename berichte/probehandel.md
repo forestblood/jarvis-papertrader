@@ -3,7 +3,7 @@ type: topic
 tags: [finanzen, trading]
 ---
 
-# Probehandel – Stand 2026-11-28 05:35
+# Probehandel – Stand 2026-11-28 06:31
 
 Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jede Order kostet hier wie bei Trade Republic 1 €.
 
@@ -17,18 +17,22 @@ Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jed
 
 | Startkapital | Wert jetzt | Rendite | Trades | Gewinnquote | Gebühren |
 |---|---|---|---|---|---|
-| 500 € | 466.33 € | -6.73 % | 17 | 0.0 % | 35.00 € |
+| 500 € | 464.09 € | -7.18 % | 17 | 0.0 % | 37.00 € |
 
 Offene Positionen:
 
 | Symbol | Wert | Ergebnis |
 |---|---|---|
-| LINKUSD | 48.85 € | -0.11 % |
+| AVAXUSD | 48.73 € | -0.19 % |
+| DOGEUSD | 49.23 € | +0.71 % |
+| LINKUSD | 48.60 € | -0.62 % |
 
 ## Letzte Ausführungen
 
 | Zeit | Strategie | Symbol | Seite | Betrag | Ergebnis | Grund |
 |---|---|---|---|---|---|---|
+| 2026-11-28 06:31 | ruecksetzer | DOGEUSD | Kauf | 49.01 € |  | RSI 21 (überverkauft), Kurs nahe Trend-EMA100 |
+| 2026-11-28 06:31 | ruecksetzer | AVAXUSD | Kauf | 48.95 € |  | RSI 25 (überverkauft), Kurs nahe Trend-EMA100 |
 | 2026-11-28 05:35 | momentum | SOLUSD | Verkauf | 48.42 € | -2.47 € | Stop-Loss bei -3.0 % |
 | 2026-11-28 04:33 | ruecksetzer | LINKUSD | Kauf | 49.03 € |  | RSI 29 (überverkauft), Kurs nahe Trend-EMA100 |
 | 2026-11-28 02:53 | momentum | SOLUSD | Kauf | 49.02 € |  | Ausbruch über 60-Min-Hoch 72.11, Volumen 5.4x |
@@ -42,5 +46,3 @@ Offene Positionen:
 | 2026-11-27 15:41 | ruecksetzer | DOGEUSD | Kauf | 49.01 € |  | RSI 21 (überverkauft), Kurs nahe Trend-EMA100 |
 | 2026-11-27 15:41 | ruecksetzer | BTCUSD | Kauf | 49.03 € |  | RSI 18 (überverkauft), Kurs nahe Trend-EMA100 |
 | 2026-11-27 15:41 | ruecksetzer | AVAXUSD | Kauf | 48.92 € |  | RSI 16 (überverkauft), Kurs nahe Trend-EMA100 |
-| 2026-11-27 15:41 | momentum | ETHUSD | Verkauf | 47.78 € | -3.14 € | Stop-Loss bei -2.1 % |
-| 2026-11-27 14:50 | momentum | ETHUSD | Kauf | 49.04 € |  | Ausbruch über 60-Min-Hoch 1723.01, Volumen 2.5x |

@@ -227,3 +227,7 @@
 2026-11-28 05:35:21 [momentum] Verkauf SOL/USD: Stop-Loss bei -3.0 %
 2026-11-28 05:35:21 [momentum] Durchlauf fertig: Wert 490.29 € (Start 500 €), 1 offene Position(en), 1 Aktion(en), US-Börse zu – nur Krypto
 2026-11-28 05:35:22 [ruecksetzer] Durchlauf fertig: Wert 466.33 € (Start 500 €), 1 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-28 06:31:51 [momentum] Durchlauf fertig: Wert 490.25 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-28 06:31:54 [ruecksetzer] Kauf AVAX/USD: RSI 25 (überverkauft), Kurs nahe Trend-EMA100
+2026-11-28 06:31:54 [ruecksetzer] Kauf DOGE/USD: RSI 21 (überverkauft), Kurs nahe Trend-EMA100
+2026-11-28 06:31:54 [ruecksetzer] Durchlauf fertig: Wert 466.08 € (Start 500 €), 1 offene Position(en), 2 Aktion(en), US-Börse zu – nur Krypto
