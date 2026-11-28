@@ -1,5 +1,5 @@
 {
- "stand": "2026-11-28 03:40",
+ "stand": "2026-11-28 04:33",
  "hinweis": "Probehandel bei Alpaca (Paper). Kein echtes Geld. Gebühren wie Trade Republic simuliert (1 € je Order).",
  "strategien": {
   "momentum": {
@@ -36,16 +36,26 @@
   },
   "ruecksetzer": {
    "start_eur": 500,
-   "wert_eur": 467.5,
-   "rendite_prozent": -6.5,
-   "bargeld_eur": 467.5,
-   "gebuehren_eur": 34.0,
+   "wert_eur": 466.33,
+   "rendite_prozent": -6.73,
+   "bargeld_eur": 417.47,
+   "gebuehren_eur": 35.0,
    "trades_abgeschlossen": 17,
    "gewinnquote_prozent": 0.0,
    "ergebnis_heute_eur": -3.79,
    "bester_trade_eur": -1.0,
    "schlechtester_trade_eur": -2.44,
-   "positionen": [],
+   "positionen": [
+    {
+     "symbol": "LINKUSD",
+     "menge": 5.871951039,
+     "seit": "2026-11-28T03:33:43.692135+00:00",
+     "einstand_usd": 9.2451,
+     "kurs_usd": 9.2351,
+     "wert_eur": 48.85,
+     "ergebnis_prozent": -0.11
+    }
+   ],
    "gesperrt": null,
    "name": "Rücksetzer kaufen",
    "regeln": {

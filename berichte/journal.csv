@@ -40,3 +40,4 @@ zeit,strategie,symbol,seite,menge,preis_usd,betrag_eur,gebuehr_eur,ergebnis_eur,
 2026-11-28 00:44,ruecksetzer,DOGEUSD,Verkauf,943.581,0.0576,48.96,1.00,-1.92,RSI 61 erholt (+0.3 %)
 2026-11-28 01:35,ruecksetzer,AVAXUSD,Verkauf,8.21715,6.6154,48.97,1.00,-1.87,RSI 62 erholt (-0.5 %)
 2026-11-28 02:53,momentum,SOLUSD,Kauf,0.753351,72.2210,49.02,1.00,,"Ausbruch über 60-Min-Hoch 72.11, Volumen 5.4x"
+2026-11-28 04:33,ruecksetzer,LINKUSD,Kauf,5.88667,9.2451,49.03,1.00,,"RSI 29 (überverkauft), Kurs nahe Trend-EMA100"
