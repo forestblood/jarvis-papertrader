@@ -239,3 +239,6 @@
 2026-11-28 09:36:43 [ruecksetzer] Durchlauf fertig: Wert 463.69 € (Start 500 €), 3 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-28 10:27:34 [momentum] Durchlauf fertig: Wert 490.25 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-28 10:27:34 [ruecksetzer] Durchlauf fertig: Wert 463.61 € (Start 500 €), 3 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-28 11:17:33 [momentum] Durchlauf fertig: Wert 490.25 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
+2026-11-28 11:17:35 [ruecksetzer] Verkauf LINK/USD: RSI 56 erholt (-1.1 %)
+2026-11-28 11:17:35 [ruecksetzer] Durchlauf fertig: Wert 463.56 € (Start 500 €), 3 offene Position(en), 1 Aktion(en), US-Börse zu – nur Krypto
