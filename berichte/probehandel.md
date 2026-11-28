@@ -3,7 +3,7 @@ type: topic
 tags: [finanzen, trading]
 ---
 
-# Probehandel – Stand 2026-11-28 04:33
+# Probehandel – Stand 2026-11-28 05:35
 
 Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jede Order kostet hier wie bei Trade Republic 1 €.
 
@@ -11,13 +11,7 @@ Simulation mit virtuellem Geld bei Alpaca (Paper Trading), kein echtes Geld. Jed
 
 | Startkapital | Wert jetzt | Rendite | Trades | Gewinnquote | Gebühren |
 |---|---|---|---|---|---|
-| 500 € | 491.33 € | -1.73 % | 3 | 0.0 % | 7.00 € |
-
-Offene Positionen:
-
-| Symbol | Wert | Ergebnis |
-|---|---|---|
-| SOLUSD | 48.49 € | -0.82 % |
+| 500 € | 490.25 € | -1.95 % | 4 | 0.0 % | 8.00 € |
 
 ## Rücksetzer kaufen
 
@@ -35,6 +29,7 @@ Offene Positionen:
 
 | Zeit | Strategie | Symbol | Seite | Betrag | Ergebnis | Grund |
 |---|---|---|---|---|---|---|
+| 2026-11-28 05:35 | momentum | SOLUSD | Verkauf | 48.42 € | -2.47 € | Stop-Loss bei -3.0 % |
 | 2026-11-28 04:33 | ruecksetzer | LINKUSD | Kauf | 49.03 € |  | RSI 29 (überverkauft), Kurs nahe Trend-EMA100 |
 | 2026-11-28 02:53 | momentum | SOLUSD | Kauf | 49.02 € |  | Ausbruch über 60-Min-Hoch 72.11, Volumen 5.4x |
 | 2026-11-28 01:35 | ruecksetzer | AVAXUSD | Verkauf | 48.97 € | -1.87 € | RSI 62 erholt (-0.5 %) |
@@ -49,4 +44,3 @@ Offene Positionen:
 | 2026-11-27 15:41 | ruecksetzer | AVAXUSD | Kauf | 48.92 € |  | RSI 16 (überverkauft), Kurs nahe Trend-EMA100 |
 | 2026-11-27 15:41 | momentum | ETHUSD | Verkauf | 47.78 € | -3.14 € | Stop-Loss bei -2.1 % |
 | 2026-11-27 14:50 | momentum | ETHUSD | Kauf | 49.04 € |  | Ausbruch über 60-Min-Hoch 1723.01, Volumen 2.5x |
-| 2026-11-27 06:38 | momentum | SOLUSD | Verkauf | 49.92 € | -1.0 € | Haltedauer 8 h erreicht (+2.6 %) |
