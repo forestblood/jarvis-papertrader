@@ -1,19 +1,29 @@
 {
- "stand": "2026-11-28 01:35",
+ "stand": "2026-11-28 02:53",
  "hinweis": "Probehandel bei Alpaca (Paper). Kein echtes Geld. Gebühren wie Trade Republic simuliert (1 € je Order).",
  "strategien": {
   "momentum": {
    "start_eur": 500,
-   "wert_eur": 492.85,
-   "rendite_prozent": -1.43,
-   "bargeld_eur": 492.85,
-   "gebuehren_eur": 6.0,
+   "wert_eur": 491.71,
+   "rendite_prozent": -1.66,
+   "bargeld_eur": 442.84,
+   "gebuehren_eur": 7.0,
    "trades_abgeschlossen": 3,
    "gewinnquote_prozent": 0.0,
    "ergebnis_heute_eur": 0,
    "bester_trade_eur": -1.0,
    "schlechtester_trade_eur": -3.14,
-   "positionen": [],
+   "positionen": [
+    {
+     "symbol": "SOLUSD",
+     "menge": 0.751467751,
+     "seit": "2026-11-28T01:53:47.507719+00:00",
+     "einstand_usd": 72.221,
+     "kurs_usd": 72.1993,
+     "wert_eur": 48.88,
+     "ergebnis_prozent": -0.03
+    }
+   ],
    "gesperrt": null,
    "name": "Momentum / Ausbruch",
    "regeln": {

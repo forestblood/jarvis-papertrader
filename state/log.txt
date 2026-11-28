@@ -216,3 +216,6 @@
 2026-11-28 01:35:24 [momentum] Durchlauf fertig: Wert 492.85 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
 2026-11-28 01:35:25 [ruecksetzer] Verkauf AVAX/USD: RSI 62 erholt (-0.5 %)
 2026-11-28 01:35:25 [ruecksetzer] Durchlauf fertig: Wert 468.15 € (Start 500 €), 1 offene Position(en), 1 Aktion(en), US-Börse zu – nur Krypto
+2026-11-28 02:53:49 [momentum] Kauf SOL/USD: Ausbruch über 60-Min-Hoch 72.11, Volumen 5.4x
+2026-11-28 02:53:49 [momentum] Durchlauf fertig: Wert 492.85 € (Start 500 €), 0 offene Position(en), 1 Aktion(en), US-Börse zu – nur Krypto
+2026-11-28 02:53:50 [ruecksetzer] Durchlauf fertig: Wert 467.50 € (Start 500 €), 0 offene Position(en), 0 Aktion(en), US-Börse zu – nur Krypto
